@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.card {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column-left {
+  display: flex;
+  font-size: 2em;
+}
+
+.card-top {
+  background-color: #f1f8f9;
+  padding: 1em;
+}
+
+.card-bottom {
+  background-color: #4e5860;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+p {
+  margin: 0;
+}
+
+#units {
+  cursor: pointer;
+  /*color: */
+}
+
+.description {
+  font-weight: 300;
+  font-size: 1.5em;
+}
