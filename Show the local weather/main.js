@@ -1,10 +1,10 @@
-fetch('http://ip-api.com/json')
+fetch('https://ip-api.com/json')
     .then(response => {
         return response.json().then(data => data);
     })
     .then(location => {
         const { city } = location;
-        return fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=9127c9c34a42acd7f89180689aa55b9f&units=metric`);
+        return fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=9127c9c34a42acd7f89180689aa55b9f&units=metric`);
     })
     .then(response => {
         response.json().then(weatherData => {
