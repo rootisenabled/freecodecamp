@@ -36,7 +36,15 @@ const result = mergeStream.subscribe(response => {
 
   Object.keys(data).map(key => {
     let val = data[key];
-    appendData += `<li>${val.title}</li>`;
+    appendData += `
+                    <li>
+                      <p>
+                        <a target="_blank" href="https://en.wikipedia.org/?curid=${val.pageid}">
+                          ${val.title}
+                        </a>
+                      </p>
+                    </li>
+                  `;
   })
   
   $results.append(appendData);

@@ -12,6 +12,8 @@
   <title>Wikipedia search</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -19,13 +21,21 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-  <input type="text" class="input" />
+  <main>
+    <h1>Welcome to wiki search widget!</h1>
+    <p>Just type in what you're looking for!</p>
+    <p>
+      To get a random article, click
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random" />here</a>
+    </p>
+    <input type="text" class="input" />
 
-  <div class="results">
-    <ul>
+    <div class="results">
+      <ul>
 
-    </ul>
-  </div>
+      </ul>
+    </div>
+  </main>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@reactivex/rxjs@5.0.0-beta.7/dist/global/Rx.umd.js"></script>
